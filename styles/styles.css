@@ -1,0 +1,88 @@
+:root {
+    --bg-dark: #333;
+    --text-light: white;
+    --hover-scale: 1.1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Responsive Container */
+.container {
+    max-width: 100vh;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    background: #666;
+    padding: 20px;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(var(--hover-scale)) !important;
+}
+
+/* Sun Styling */
+.sun {
+    grid-column: span 1;
+    grid-row: span 2;
+    width: 200px;
+    padding: 40px;
+}
+
+.sun-avatar {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, yellow, orange);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Planet Styling */
+.planet {
+    width: var(--planet-size);
+    height: var(--planet-size);
+    background-color: var(--planet-color);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    .card {
+        width: 100px;
+    }
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+}

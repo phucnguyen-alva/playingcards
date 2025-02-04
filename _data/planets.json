@@ -1,0 +1,12 @@
+{
+  "planets": [
+    { "name": "Mercury", "distance": "0.39 AU", "size": "20px", "color": "gray" },
+    { "name": "Venus", "distance": "0.72 AU", "size": "30px", "color": "goldenrod" },
+    { "name": "Earth", "distance": "1.00 AU", "size": "35px", "color": "blue" },
+    { "name": "Mars", "distance": "1.52 AU", "size": "28px", "color": "red" },
+    { "name": "Jupiter", "distance": "5.20 AU", "size": "60px", "color": "orange" },
+    { "name": "Saturn", "distance": "9.58 AU", "size": "55px", "color": "gold" },
+    { "name": "Uranus", "distance": "19.22 AU", "size": "45px", "color": "lightblue" },
+    { "name": "Neptune", "distance": "30.05 AU", "size": "40px", "color": "darkblue" }
+  ]
+}
